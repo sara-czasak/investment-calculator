@@ -11,6 +11,7 @@ The program prompts you for three values:
 - **Annual growth rate** — the expected yearly percentage increase
 
 It then calculates and displays your projected return using the compound growth formula:
+
 total = investment * (1 + rate) ** years
 
 ## Usage
@@ -20,6 +21,7 @@ python main.py
 ```
 
 Example output:
+
 The total profit for a 10 year investment of 5000 at 7% is: 9835.76
 
 ## Input Validation
