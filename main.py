@@ -34,7 +34,6 @@ while not persent_set:
 
 
 # Calculate the total profit after X amount of years
-# formula: profit = investment_amount * (1+ profit_percent)**years
 
 if investment_amount and profit_percent and years:
     total_profit = investment_amount * (1+ profit_percent) ** years
