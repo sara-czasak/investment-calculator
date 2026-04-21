@@ -1,6 +1,7 @@
 years = None
 investment_amount = None
 profit_percent = None
+total_profit = None
 
 # Get years and make sure the input only contains numbers
 years_set = False
@@ -30,6 +31,7 @@ while not persent_set:
     except ValueError:
         print("Please enter annual increase percent in numbers only")
 
+company_name = input("Enter the name of the company that you want to invest with: ")
 
 
 
@@ -38,3 +40,8 @@ while not persent_set:
 if investment_amount and profit_percent and years:
     total_profit = investment_amount * (1+ profit_percent) ** years
     print(f"The total profit for a {int(years)} year investment of {int(investment_amount)} at {int(profit_percent * 100)}% is: {total_profit:.2f}")
+
+if total_profit:
+    with open('investments.txt', 'a') as file:
+        file.write(f'{company_name.title()} | {investment_amount:.2f} | {int(profit_percent * 100)}% | {years} | {total_profit:.2f}\n')
+        print('Data has been saved to investments.txt')
