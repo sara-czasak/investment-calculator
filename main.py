@@ -41,7 +41,7 @@ while not persent_set:
 
 # Calculate the total profit after X amount of years
 
-if investment_amount is not None and profit_percent is not None and years is not None and company_name is not None:
+if investment_amount is not None and profit_percent is not None and years is not None and company_name != "":
     total_profit = investment_amount * (1+ profit_percent) ** years
     print(f"The total profit for a {int(years)} year investment of {int(investment_amount)} at {int(profit_percent * 100)}% is: {total_profit:.2f}")
     with open('investments.txt', 'a') as file:
