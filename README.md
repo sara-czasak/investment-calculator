@@ -35,7 +35,7 @@ python CLI_version/main.py
 
 ### Streamlit
 ```bash
-streamlit run streamlit_version/main.py
+streamlit run "streamlit version/main.py"
 ```
 
 ## Input Validation
