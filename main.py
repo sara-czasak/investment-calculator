@@ -3,6 +3,10 @@ investment_amount = None
 profit_percent = None
 total_profit = None
 
+
+# Get name of company you want to invest with
+company_name = input("Enter the name of the company that you want to invest with: ")
+
 # Get years and make sure the input only contains numbers
 years_set = False
 while not years_set:
@@ -31,7 +35,7 @@ while not persent_set:
     except ValueError:
         print("Please enter annual increase percent in numbers only")
 
-company_name = input("Enter the name of the company that you want to invest with: ")
+
 
 
 
